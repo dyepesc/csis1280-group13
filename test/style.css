@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper {
+    /* background-image: url(https://www.kanpai-japan.com/sites/default/files/uploads/2022/10/haneda-airport-tokyo-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.wrapper>nav>ul{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+}
+
+.wrapper>nav>ul>li {
+    padding: 20px;
+    background-color: darkgray;
+    border: 1px solid black;
+    flex: 1;
+}
+
+ul>li>a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+
+
+.backgroundimage{
+    background-image: url(img/haneda_airport.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    min-height: 100%;
+}
+
+
+
+main>h1 {
+    color: white;
+    font-size: 50px;
+
+}
+
+
+footer {
+    text-align: center;
+}
+
+main>h1 {
+    font-family: sans-serif;
+    text-align: center;
+}

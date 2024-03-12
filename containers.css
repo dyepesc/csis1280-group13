@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.imgwrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vh);
+    margin: 20px 5px 20px 5px;
+    height: 100%;
+    object-fit: cover;
+    border-image: linear-gradient(rgb(207, 0, 0), rgb(17, 17, 17)) 30;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.imgwrap>.backgroundimage>p{
+    font-family: "Lato", sans-serif;
+    color: white;
+    margin-left: 1rem;
+}
+
+.imgwrap>.backgroundimage>p.first{
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 45px;
+}
+
+.imgwrap>.backgroundimage>p.second{
+    font-size: 20px;
+    max-width: 50%;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 3rem;
+}
+
+.container{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    text-decoration: none;
+}
+
+.container>.airlinesbox>a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.container>.airlinesbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(172, 172, 172);
+    border: 5px solid rgb(0, 0, 0);
+    margin: 5px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+.container>.jal {
+    border-image: linear-gradient(rgb(201, 0, 0), rgb(0, 0, 0)) 30;
+    /* background: url(img/jalPlane.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.3)), url("img/jalPlane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container>.ana {
+    border-image: linear-gradient(rgb(11, 49, 143), rgb(0, 163, 230)) 30;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.3)), url("img/anaPlane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container>.zipair{
+    border-image: linear-gradient(rgb(4,140,108), rgb(24, 21, 21)) 20;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.3)), url("img/zipairPlane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container>.peach {
+    border-image: linear-gradient(rgb(160,52,140), rgb(156,44,140)) 30;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.3)), url("img/peachPlane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container>.jetstar {
+    border-image: linear-gradient(rgb(252,91,20), rgb(12,12,12)) 30;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.3)), url("img/jetstarPlane.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container>.airlinesbox>p {
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.container>.airlinesbox>a>img{
+    max-width: 175px;
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.container>.airlinesbox>a:hover {
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: 0.8s;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container>.airlinesbox>p:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+.container>.airlinesbox>a:hover:after {
+    transition: 0.3s;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container>.airlinesbox {
+        flex-wrap: nowrap;
+    }
+}
